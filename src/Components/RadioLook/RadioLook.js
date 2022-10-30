@@ -16,6 +16,7 @@ export default function RadioLook() {
   const [songs, setSongs] = useState([]);
   const [song, setSong] = useState("");
   const [games, setGames] = useState([]);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     let games = [];
@@ -84,7 +85,9 @@ export default function RadioLook() {
     console.log(song);
     setSong(song);
   };
-
+  function handleLoad() {
+    setLoaded(true);
+  }
   async function handlePlay(songs) {
     if (isPlaying == false) {
       playRandomSong(songs);
@@ -106,16 +109,14 @@ export default function RadioLook() {
           style={{ backgroundImage: "url(" + game.image + ")" }}
           className="game-two"
         >
-          {isPlaying && (
+          {/* {isPlaying && (
             <ReactHowler
-              preload={true}
-              html5={true}
               autoplay={false}
               src={song}
               volume={0.5}
               playing={isPlaying}
             />
-          )}
+          )} */}
 
           <h1 className="game-title">{game.name}</h1>
           {game.songs.map((song, index) => (
@@ -123,6 +124,7 @@ export default function RadioLook() {
           ))}
         </div>
       ))}
+      <p>{loaded ? "Loaded" : "Loading"}</p>
       <div className="playnpause">
         {" "}
         {isPlaying ? (
@@ -145,6 +147,14 @@ export default function RadioLook() {
           // <MdPlayCircle style={{ color: "black" }} size={36} />
         )}
       </div>
+      {isPlaying && (
+        <ReactHowler
+          autoplay={false}
+          src={song}
+          volume={0.5}
+          playing={isPlaying}
+        />
+      )}
     </div>
   );
 }
