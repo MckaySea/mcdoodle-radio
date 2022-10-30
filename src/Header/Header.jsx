@@ -11,7 +11,7 @@ from "react-icons/bs"
 import './Header.css';
 const menuItem=[
   {
-      path:"/radio",
+      path:"/pRadio",
       name:"Radio",
       icon:<RiRadioLine size={28}/>
   },

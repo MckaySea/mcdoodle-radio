@@ -156,7 +156,7 @@ export default function RadioLook() {
             {" "}
             <h3>
               {loaded ? (
-                <GiCrossedSabres size={28} />
+                <GiCrossedSabres onClick={handlePause} size={28} />
               ) : (
                 <GiInkSwirl size={28} />
               )}
@@ -166,7 +166,8 @@ export default function RadioLook() {
         ) : (
           //playing
           <div className="footer-container">
-            <span className="footer-note">Please click an Image!</span>
+            <span className="footer-note">Click an Image for music,</span>
+            <span className="footer-note">and click the swords to stop!</span>
           </div> //paused
         )}
       </div>
