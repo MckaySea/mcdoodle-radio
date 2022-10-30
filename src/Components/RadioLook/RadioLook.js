@@ -10,7 +10,7 @@ import Button from "react-bootstrap/Button";
 import ReactHowler from "react-howler";
 import { MdPlayCircle, MdPause } from "react-icons/md";
 import { RiRadioLine } from "react-icons/ri";
-
+import { GiInkSwirl, GiCrossedSabres } from "react-icons/gi";
 export default function RadioLook() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [songs, setSongs] = useState([]);
@@ -92,6 +92,7 @@ export default function RadioLook() {
     if (isPlaying == false) {
       playRandomSong(songs);
       setIsPlaying(true);
+      setLoaded(false);
     } else setIsPlaying(false);
   }
   const divStyle = (image) => ({
@@ -124,7 +125,6 @@ export default function RadioLook() {
           ))}
         </div>
       ))}
-      <p>{loaded ? "Loaded" : "Loading"}</p>
       <div className="playnpause">
         {" "}
         {isPlaying ? (
@@ -135,11 +135,18 @@ export default function RadioLook() {
               backgroundPositionX: -19,
               backgroundPositionY: -110,
               transition: "all 1.0s",
-              padding: 45,
+              padding: 0,
             }}
             className="songbox"
           >
             {" "}
+            <h5>
+              {loaded ? (
+                <GiCrossedSabres size={28} />
+              ) : (
+                <GiInkSwirl size={28} />
+              )}
+            </h5>
             {song}
           </div> //playing
         ) : (
@@ -153,6 +160,7 @@ export default function RadioLook() {
           src={song}
           volume={0.5}
           playing={isPlaying}
+          onLoad={handleLoad}
         />
       )}
     </div>
