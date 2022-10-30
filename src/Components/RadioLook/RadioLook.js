@@ -46,16 +46,29 @@ export default function RadioLook() {
     worldOfWarcraftClassic.image = "./wowScreen.png";
     worldOfWarcraftClassic.songs = ["elwynnForestWow.mp3"];
 
+    const galaga = {};
+    galaga.name = "Galaga";
+    galaga.image = "./galaga.jpg";
+    galaga.songs = ["galagaOne.mp3"];
+
     const ultimaOnline = {};
     ultimaOnline.name = "Ultima Online";
     ultimaOnline.image = "./ultima.png";
     ultimaOnline.songs = ["TheWanderer.mp3"];
+
+    const ocarinaTime = {};
+    ocarinaTime.name = "Zelda:Ocarina of Time";
+    ocarinaTime.image = "./ocarinaTime.jpg";
+    ocarinaTime.songs = ["preludeoftimeZelda.mp3"];
+
     games.push(runescape);
     games.push(everquest);
     games.push(adventureQuest);
     games.push(finalFantasyTen);
     games.push(worldOfWarcraftClassic);
     games.push(ultimaOnline);
+    games.push(galaga);
+    games.push(ocarinaTime);
     setGames(games);
     // let songs = [];
     // songs.push(alKharSong);
@@ -149,10 +162,12 @@ export default function RadioLook() {
               )}
             </h3>
             {song}
-          </div> //playing
+          </div>
         ) : (
-          <div> </div> //paused
-          // <MdPlayCircle style={{ color: "black" }} size={36} />
+          //playing
+          <div className="footer-container">
+            <span className="footer-note">Please click an Image!</span>
+          </div> //paused
         )}
       </div>
       {isPlaying && (
