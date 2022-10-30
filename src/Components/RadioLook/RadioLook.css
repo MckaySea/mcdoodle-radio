@@ -7,7 +7,7 @@
   grid-template-columns: 1fr 1fr;
   align-content: center;
   align-items: center;
-  padding-left: 250px;
+  padding-left: 125px;
   padding-top: 50px;
 }
 .game-two {
@@ -41,11 +41,11 @@
  color: rgb(231, 241, 171);
  margin-top: 20px;
 
- padding: 45px,
+ padding: 25px,
  
 }
 .footer-container {
-  width: 50%;
+  width: 40%;
   height: 60px !important;
   padding-top: 30px;
   background-color: rgb(245, 133, 133);
