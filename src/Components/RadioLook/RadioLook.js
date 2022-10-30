@@ -29,7 +29,7 @@ export default function RadioLook() {
     const everquest = {};
     everquest.name = "Everquest";
     everquest.image = "./eqpic.png";
-    everquest.songs = ["eq2title.mp3"];
+    everquest.songs = ["eq2title.mp3", "qeynosEq.mp3"];
 
     const adventureQuest = {};
     adventureQuest.name = "AdventureQuest";
@@ -88,12 +88,12 @@ export default function RadioLook() {
   function handleLoad() {
     setLoaded(true);
   }
+  // async function handleSpecificSong(songs) {}
   async function handlePlay(songs) {
-    if (isPlaying == false) {
-      playRandomSong(songs);
-      setIsPlaying(true);
-      setLoaded(false);
-    } else setIsPlaying(false);
+    playRandomSong(songs);
+    setIsPlaying(true);
+    setLoaded(false);
+    // } else setIsPlaying(false);
   }
   const divStyle = (image) => ({
     backgroundImage: `url(${image})`,
@@ -120,6 +120,7 @@ export default function RadioLook() {
           )} */}
 
           <h1 className="game-title">{game.name}</h1>
+
           {game.songs.map((song, index) => (
             <li key={index}>{song}</li>
           ))}
@@ -140,13 +141,13 @@ export default function RadioLook() {
             className="songbox"
           >
             {" "}
-            <h5>
+            <h3>
               {loaded ? (
                 <GiCrossedSabres size={28} />
               ) : (
                 <GiInkSwirl size={28} />
               )}
-            </h5>
+            </h3>
             {song}
           </div> //playing
         ) : (
