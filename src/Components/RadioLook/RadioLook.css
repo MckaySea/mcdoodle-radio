@@ -44,7 +44,7 @@
 }
 .footer-container {
   width: 50%;
-  height: 40px;
+  height: 40px !important;
   padding: 10px;
   background-color: rgb(245, 133, 133);
   border-radius: 30px;
