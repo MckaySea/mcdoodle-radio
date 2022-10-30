@@ -9,6 +9,8 @@ import {
 import {BsQuestionLg}
 from "react-icons/bs"
 import './Header.css';
+import {GiMusicalNotes} from 'react-icons/gi'
+import {ImMusic} from 'react-icons/im'
 const menuItem=[
   {
       path:"/pRadio",
@@ -43,8 +45,13 @@ export const Header = ({pStats}) => {
       
       <section className="header-top">
         <section style={{flexDirection:'column'}} className="header-top__logo">
-          <a href="/" className="header-logo">Doodle's </a>
+          <a href="/" style={{  zIndex: 12}} className="header-logo">Doodle's </a>
           <a href="/" className="header-logo">Music</a>
+          <GiMusicalNotes color='#7f0000' size ={26}
+          
+          className='logo-picture'/>
+          <ImMusic color='#7f0000' size ={26}
+          className="logo-picture-two" />
         </section>
         <hr style={{marginLeft:10}} className="header-side__seperator" />
         <section className="header-top__navbar">
