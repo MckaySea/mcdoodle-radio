@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 
+*.body {
+  background-color: aqua;
+}
 .all-games{
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -10,6 +13,9 @@
   padding-left: 25px;
   padding-top: 50px;
 
+}
+.indiv-songs{
+  margin-bottom: 15px;
 }
 .game-two {
   margin-left: 50px;
@@ -31,6 +37,8 @@
 
 .game-two:hover {
   border: 10px solid rgb(132, 151, 236);
+cursor: pointer;
+padding: 150px;
 
 }
 .playnpause {
@@ -88,6 +96,7 @@ background-repeat: no-repeat;
 .game-two::-webkit-scrollbar {
   display: none;
 }
+
 /* .main-two {
   width: 800px;
   height: 600px;
@@ -108,3 +117,4 @@ background-repeat: no-repeat;
   flex-direction: column;
   justify-content: space-between;
 } */
+

@@ -77,11 +77,7 @@ export const Header = ({pStats}) => {
         <section style={{flexDirection:'column'}} className="header-top__logo">
           <a href="/" style={{  zIndex: 12}} className="header-logo">Doodle's </a>
           <a href="/" className="header-logo">Music</a>
-          <GiMusicalNotes color='#7f0000' size ={26}
-          
-          className='logo-picture'/>
-          <ImMusic color='#7f0000' size ={26}
-          className="logo-picture-two" />
+
         </section>
         <hr style={{marginLeft:10}} className="header-side__seperator" />
         <section className="header-top__navbar">

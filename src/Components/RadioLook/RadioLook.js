@@ -83,6 +83,19 @@ export default function RadioLook() {
       "The Special Pose!.mp3",
       "The Prelude.mp3",
       "Tifa's Theme.mp3",
+      "Anxious Heart.mp3",
+      "Turks' Theme.mp3",
+      "Shinra Corporation.mp3",
+      "Chasing the Black-Caped Man.mp3",
+      "Farm Boy.mp3",
+      "It's Difficult to Stand on Both Feet, Isn't It.mp3",
+      "Life Stream.mp3",
+      "Cosmo Canyon.mp3",
+      "Mark of the Traitor.mp3",
+      "Mining Town.mp3",
+      "The Birth of God.mp3",
+      "World Crisis.mp3",
+      "One-Winged Angel.mp3",
     ];
 
     games.push(runescape);
@@ -161,7 +174,9 @@ export default function RadioLook() {
           <h1 className="game-title">{game.name}</h1>
 
           {game.songs.map((song, index) => (
-            <li key={index}>{song}</li>
+            <li className="indiv-songs" key={index}>
+              {song}
+            </li>
           ))}
         </div>
       ))}
