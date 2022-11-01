@@ -71,6 +71,20 @@ export default function RadioLook() {
     ocarinaTime.image = "./ocarinaTime.jpg";
     ocarinaTime.songs = ["preludeoftimeZelda.mp3"];
 
+    const mineCraft = {};
+    mineCraft.name = "Minecraft";
+    mineCraft.image = "./minecraft.jpg";
+    mineCraft.songs = ["minecraftc418.mp3"];
+
+    const finalFantasySeven = {};
+    finalFantasySeven.name = "Final Fantasy XII";
+    finalFantasySeven.image = "./ff7.jpg";
+    finalFantasySeven.songs = [
+      "The Special Pose!.mp3",
+      "The Prelude.mp3",
+      "Tifa's Theme.mp3",
+    ];
+
     games.push(runescape);
     games.push(everquest);
     games.push(adventureQuest);
@@ -79,6 +93,8 @@ export default function RadioLook() {
     games.push(ultimaOnline);
     games.push(galaga);
     games.push(ocarinaTime);
+    games.push(mineCraft);
+    games.push(finalFantasySeven);
     setGames(games);
     // let songs = [];
     // songs.push(alKharSong);
