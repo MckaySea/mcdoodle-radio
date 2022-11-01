@@ -3,21 +3,23 @@
 
 .all-games{
   display: grid;
-  grid-template-rows: 1fr 800px;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   align-content: center;
   align-items: center;
-  padding-left: 125px;
+  padding-left: 25px;
   padding-top: 50px;
+
 }
 .game-two {
+  margin-left: 50px;
   width: 800px;
   height: 600px;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
   padding: 10px;
   font-family: 'Press Start 2P', cursive;
   color: yellow;
-  border-radius: 50px;
+  border-radius: 80px;
   overflow-y: auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,7 +40,7 @@
 .footer-note {
  font-size: 16px;
  font-family: 'Press Start 2P', cursive;
- color: rgb(8, 8, 7);
+ color: rgb(12, 12, 8);
  margin-top: 20px;
 
  padding: 25px,

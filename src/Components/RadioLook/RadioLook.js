@@ -11,14 +11,24 @@ import ReactHowler from "react-howler";
 import { MdPlayCircle, MdPause } from "react-icons/md";
 import { RiRadioLine } from "react-icons/ri";
 import { GiInkSwirl, GiCrossedSabres } from "react-icons/gi";
+import useWindowDimensions from "../../Hooks/useWindowDimensions";
 export default function RadioLook() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [songs, setSongs] = useState([]);
   const [song, setSong] = useState("");
   const [games, setGames] = useState([]);
   const [loaded, setLoaded] = useState(false);
-
+  const [size, setSize] = useState({
+    x: window.innerWidth,
+    y: window.innerHeight,
+  });
+  const updateSize = () =>
+    setSize({
+      x: window.innerWidth,
+      y: window.innerHeight,
+    });
   useEffect(() => {
+    window.onresize = updateSize;
     let games = [];
     const runescape = {};
     runescape.name = "Runescape";
