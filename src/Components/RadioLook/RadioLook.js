@@ -41,10 +41,27 @@ export default function RadioLook() {
     everquest.image = "./eqpic.png";
     everquest.songs = ["eq2title.mp3", "qeynosEq.mp3"];
 
-    const adventureQuest = {};
-    adventureQuest.name = "AdventureQuest";
-    adventureQuest.image = "./aqwPicture.png";
-    adventureQuest.songs = ["aqwSand.mp3"];
+    const finalFantasySeven = {};
+    finalFantasySeven.name = "Final Fantasy XII";
+    finalFantasySeven.image = "./ff7.jpg";
+    finalFantasySeven.songs = [
+      "The Special Pose!.mp3",
+      "The Prelude.mp3",
+      "Tifa's Theme.mp3",
+      "Anxious Heart.mp3",
+      "Turks' Theme.mp3",
+      "Shinra Corporation.mp3",
+      "Chasing the Black-Caped Man.mp3",
+      "Farm Boy.mp3",
+      "It's Difficult to Stand on Both Feet, Isn't It.mp3",
+      "Life Stream.mp3",
+      "Cosmo Canyon.mp3",
+      "Mark of the Traitor.mp3",
+      "Mining Town.mp3",
+      "The Birth of God.mp3",
+      "World Crisis.mp3",
+      "One-Winged Angel.mp3",
+    ];
 
     const finalFantasyTen = {};
     finalFantasyTen.name = "Final Fantasy X";
@@ -76,38 +93,21 @@ export default function RadioLook() {
     mineCraft.image = "./minecraft.jpg";
     mineCraft.songs = ["minecraftc418.mp3"];
 
-    const finalFantasySeven = {};
-    finalFantasySeven.name = "Final Fantasy XII";
-    finalFantasySeven.image = "./ff7.jpg";
-    finalFantasySeven.songs = [
-      "The Special Pose!.mp3",
-      "The Prelude.mp3",
-      "Tifa's Theme.mp3",
-      "Anxious Heart.mp3",
-      "Turks' Theme.mp3",
-      "Shinra Corporation.mp3",
-      "Chasing the Black-Caped Man.mp3",
-      "Farm Boy.mp3",
-      "It's Difficult to Stand on Both Feet, Isn't It.mp3",
-      "Life Stream.mp3",
-      "Cosmo Canyon.mp3",
-      "Mark of the Traitor.mp3",
-      "Mining Town.mp3",
-      "The Birth of God.mp3",
-      "World Crisis.mp3",
-      "One-Winged Angel.mp3",
-    ];
+    const adventureQuest = {};
+    adventureQuest.name = "AdventureQuest";
+    adventureQuest.image = "./aqwPicture.png";
+    adventureQuest.songs = ["aqwSand.mp3"];
 
     games.push(runescape);
     games.push(everquest);
-    games.push(adventureQuest);
+    games.push(finalFantasySeven);
     games.push(finalFantasyTen);
     games.push(worldOfWarcraftClassic);
     games.push(ultimaOnline);
     games.push(galaga);
     games.push(ocarinaTime);
     games.push(mineCraft);
-    games.push(finalFantasySeven);
+    games.push(adventureQuest);
     setGames(games);
     // let songs = [];
     // songs.push(alKharSong);
