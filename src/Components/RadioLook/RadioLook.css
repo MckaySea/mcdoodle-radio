@@ -38,7 +38,7 @@
 }
 
 .game-two:hover {
-  border: 10px solid rgb(132, 151, 236);
+  border: 10px solid #7f0000;
 cursor: pointer;
 padding: 150px;
 
