@@ -34,7 +34,18 @@ export default function RadioLook() {
     runescape.name = "Runescape";
     runescape.image = "./Romeo_&_Juliet.png";
     // runescape.songs = [alKharSong, rsAdventure];
-    runescape.songs = ["alkharid.mp3", "adventure.mp3"];
+    runescape.songs = [
+      "alkharid.mp3",
+      "adventure.mp3",
+      "Castle Wars.mp3",
+      "ambient jungle.mp3",
+      "seashanty.mp3",
+      "seashanty2.mp3",
+      "gnome king.mp3",
+      "faerie.mp3",
+      "legend.mp3",
+      "rellekka.mp3",
+    ];
 
     const everquest = {};
     everquest.name = "Everquest";
