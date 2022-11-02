@@ -1,15 +1,35 @@
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
 
       .game-title {
+        text-align: center;
         font-size: 18px;
+      }
+
+      .game-two {
+        max-width: 600px;
+        max-height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 10px;
       }
       .game-two:hover {
         border: 10px solid #7f0000;
       cursor: pointer;
       padding: 1px;
+      font-size: 12px;
       }
+           .footer-container {
+        width: 80%;
+        height: 80% !important;
+           }
   } 
-  
+  @media only screen and (min-width: 769px) {
+    .footer-container {
+        width: 80%;
+        height: 80% !important;
+           }
+  }
   @media only screen and (min-width: 1024px) {
 
     .all-games{
@@ -76,9 +96,9 @@
        
       }
       .footer-container {
-        width: 40%;
-        height: 60px !important;
-        padding-top: 30px;
+        max-width: 40%;
+        max-height: 60% !important;
+      
         background-color: rgb(245, 133, 133);
         border-radius: 30px;
         box-shadow: 0px 0px 3px black;

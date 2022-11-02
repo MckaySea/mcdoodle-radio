@@ -219,8 +219,10 @@ export default function RadioLook() {
         ) : (
           //playing
           <div className="footer-container">
-            <span className="footer-note">Click an Image for music,</span>
-            <span className="footer-note">and click the swords to stop!</span>
+            <span className="footer-note">
+              Aye there mate! Click an Image for music and the swords to stop
+              it!{" "}
+            </span>
           </div> //paused
         )}
       </div>
