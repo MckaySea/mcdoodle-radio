@@ -79,7 +79,7 @@ export const Header = ({pStats}) => {
           <a href="/" className="header-logo">Music</a>
 
         </section>
-        <hr style={{marginLeft:10}} className="header-side__seperator" />
+        <hr className="header-side__seperator " />
         <section className="header-top__navbar">
           
           <section className="header-top__navigation">

@@ -30,10 +30,10 @@ export default function RadioLook() {
   useEffect(() => {
     window.onresize = updateSize;
     let games = [];
+
     const runescape = {};
     runescape.name = "Runescape";
     runescape.image = "./Romeo_&_Juliet.png";
-    // runescape.songs = [alKharSong, rsAdventure];
     runescape.songs = [
       "alkharid.mp3",
       "adventure.mp3",

@@ -13,8 +13,8 @@
   
   .header-top {
     display: flex;
-    width: 100%;
-    height: 62px;
+    max-width: 100%;
+    max-height: 62px;
     
   }
   .logo-picture
@@ -64,17 +64,16 @@
     width: 100%;
     border: none;
     height: 3px;
-    margin-bottom: 1px;
+    margin-bottom: 5px;
     background-color: black;
     
   }
   .header-side__seperator {
-    height: 100%;
+    height: 65px;
     border: none;
     width: 3px;
-   
     background-color: black;
-    
+    margin-left: 10px;
   }
   
   .header-top__navigation {
@@ -133,10 +132,11 @@
   .link{
     
     margin-top: 20px;
+    margin-left: 1px;
     display: flex;
     color: rgb(14, 10, 10);
     padding: 10px 15px;
-    gap: 15px;
+    gap: 10px;
     transition: all 0.5s;
 }
 .link:hover{
