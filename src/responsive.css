@@ -7,9 +7,11 @@
       }
 
       .songbox {
-        width: 90%;
+        width: 100%;
         margin-bottom: 15px;
         height: 150px;
+      
+        margin-left: 0%;
       }
       .game-two {
         max-width: 100%;
@@ -23,7 +25,7 @@
       .game-two:hover {
         border: 10px solid #7f0000;
       cursor: pointer;
-      padding: 1px;
+      padding: 10px;
       font-size: 12px;
       }
            .footer-container {
@@ -36,8 +38,11 @@
         width: 80%;
         height: 80% !important;
            }
+           .game-two:hover {
+            padding: 10px;
+           }
   }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1080px) {
 
     .all-games{
         display: grid;

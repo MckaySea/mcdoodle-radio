@@ -106,7 +106,7 @@ export default function RadioLook() {
     mineCraft.songs = ["minecraftc418.mp3"];
 
     const adventureQuest = {};
-    adventureQuest.name = "AdventureQuest";
+    adventureQuest.name = "Adventure Quest: Worlds";
     adventureQuest.image = "./aqwPicture.png";
     adventureQuest.songs = ["aqwSand.mp3"];
 
