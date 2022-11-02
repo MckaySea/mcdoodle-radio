@@ -3,15 +3,22 @@
       .game-title {
         text-align: center;
         font-size: 18px;
+        display: block;
       }
 
+      .songbox {
+        width: 90%;
+        margin-bottom: 15px;
+        height: 150px;
+      }
       .game-two {
-        max-width: 600px;
-        max-height: 400px;
+        max-width: 100%;
+        max-height: 70%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         padding: 10px;
+        padding-top: 20px;
       }
       .game-two:hover {
         border: 10px solid #7f0000;
