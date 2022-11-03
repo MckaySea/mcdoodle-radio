@@ -17,22 +17,7 @@
     max-height: 62px;
     
   }
-  .logo-picture
-{
-  position: absolute;
-  size: 28;
-  z-index: 1;
-  bottom:900px;
-  right:1705px
-} 
-.logo-picture-two
-{
-  position: absolute;
-  size: 28;
-  z-index: 1;
-  bottom:900px;
-  right:1835px;
-} 
+
  .header-top__logo {
     display: flex;
     justify-content: center;

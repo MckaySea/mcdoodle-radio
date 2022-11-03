@@ -220,8 +220,7 @@ export default function RadioLook() {
           //playing
           <div className="footer-container">
             <span className="footer-note">
-              Aye there mate! Click an Image for music and the swords to stop
-              it!{" "}
+              Greetings! Click an Image for music and the swords to stop it!{" "}
             </span>
           </div> //paused
         )}
