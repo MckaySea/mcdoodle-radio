@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.title {
+  flex-grow: 1;
+  text-shadow: 3px 3px 5px #7f0000;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
 
+}
 
 
 .header {

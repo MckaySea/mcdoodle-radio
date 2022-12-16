@@ -11,7 +11,7 @@ import ReactHowler from "react-howler";
 import { MdPlayCircle, MdPause } from "react-icons/md";
 import { RiRadioLine } from "react-icons/ri";
 import { GiInkSwirl, GiCrossedSabres } from "react-icons/gi";
-
+import GameCard from "./GameCard";
 import useWindowDimensions from "../../Hooks/useWindowDimensions";
 export default function RadioLook() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -174,15 +174,6 @@ export default function RadioLook() {
           style={{ backgroundImage: "url(" + game.image + ")" }}
           className="game-two"
         >
-          {/* {isPlaying && (
-            <ReactHowler
-              autoplay={false}
-              src={song}
-              volume={0.5}
-              playing={isPlaying}
-            />
-          )} */}
-
           <h1 className="game-title">{game.name}</h1>
 
           {game.songs.map((song, index) => (
